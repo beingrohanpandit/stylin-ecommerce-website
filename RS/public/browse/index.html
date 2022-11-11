@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Browse Catergories - Stylin</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-light container-fluid d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+            <a class="btn menu nav_btns" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </a>
+            <h5 class="brand" style="transform: translateY(3px);"><span>STYL</span><strong>IN</strong></h5>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span>STYL</span><strong>IN</strong></h5>
+                <a type="button" class="btn menu nav_btns" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="bi bi-x"></i>
+                </a>
+            </div>
+
+            <!-- Navlinks -->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Browse</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact/index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <a class="btn search-btn nav_btns" style="margin-right: 1rem;"><i class="bi bi-search"></i></li>
+            <a href="../signin/login.html" class="login" style="border: none;">SignIn</a>
+        </div>
+    </nav>
+    <div id="search-box" class="container-fluid">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="search_keyword" id="searchproduct"
+                placeholder="Search for products, brands etc.">
+            <button type="submit" class="btn btn-danger" id="button-addon2" onclick="" name="search"><i
+                    class="bi bi-search"></i></button>
+        </div>
+    </div>
+
+     <!-- products -->
+     <section id="products" class="container">
+        <div class="row gx-0">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                <div class="card">
+                    <img src="../assets/product images/backpack black1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="all-products" class="container mb-5">
+        <div class="row gx-0" id="list-products">
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn btn-secondary">Load More</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Help</h6>
+                    <ul>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Track Orders</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Categories</h6>
+                    <ul>
+                        <li><a href="">Womens</a></li>
+                        <li><a href="">Mens</a></li>
+                        <li><a href="">Shoes</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Bags</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Get in Touch</h6>
+                    <p>Any questions? Let us know at 12th floor, 222 Fake St, New Delhi, IN 10018 or call us on (+0) 44
+                        343 7769</p>
+                    <div class="d-flex social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Copyright &copy; 2021 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        // jquery for search box
+        $(document).ready(function () {
+            $(".search-btn").click(function () {
+                $("#search-box").slideToggle();
+                $('#searchproduct').trigger("focus");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

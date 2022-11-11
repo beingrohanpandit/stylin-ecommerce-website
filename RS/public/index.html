@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <title>Online Shopping Store - Stylin</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-light container-fluid d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+            <a class="btn menu nav_btns" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </a>
+            <h5 class="brand" style="transform: translateY(3px);"><span>STYL</span><strong>IN</strong></h5>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span>STYL</span><strong>IN</strong></h5>
+                <a type="button" class="btn menu nav_btns" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="bi bi-x"></i>
+                </a>
+            </div>
+
+            <!-- Navlinks -->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="browse/index.html">Browse</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact/index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <a class="btn search-btn nav_btns" style="margin-right: 1rem;"><i class="bi bi-search"></i></li>
+            <a href="signin/login.html" class="login" style="border: none;">SignIn</a>
+        </div>
+    </nav>
+    <div id="search-box" class="container-fluid">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="search_keyword" id="searchproduct"
+                placeholder="Search for products, brands etc.">
+            <button type="submit" class="btn btn-danger" id="button-addon2" onclick="" name="search"><i
+                    class="bi bi-search"></i></button>
+        </div>
+    </div>
+
+
+    <!-- Slider -->
+    <section id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/slider images/shoecollection.jpg" class="d-block w-100" alt="">
+                <div class="details">
+                    <span class="category">
+                        Footwear
+                    </span>
+                    <h1>
+                        NIKE DISCOUNT DAYS
+                    </h1>
+                    <h4>
+                        Starting at Rs.999
+                    </h4>
+                    <p>
+                        Get premium quality shoes from Nike.
+                    </p>
+                    <a href="browse/index.html" class="btn btn-dark">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/slider images/mensfashion.jpg" class="d-block w-100" alt="">
+                <div class="details">
+                    <span class="category">
+                        Mens
+                    </span>
+                    <h1>
+                        SUMMER COLLECTION
+                    </h1>
+                    <h4>
+                        upto 50% Discount
+                    </h4>
+                    <p>
+                        On brands like Nike, Puma, Addidas etc.
+                    </p>
+                    <a href="browse/index.html" class="btn btn-dark">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/slider images/shoecollection.jpg" class="d-block w-100" alt="">
+                <div class="details">
+                    <span class="category">
+                        Womens
+                    </span>
+                    <h1>
+                        NEWLY ARRIVED
+                    </h1>
+                    <h4>
+                        upto 30% Discount
+                    </h4>
+                    <p>
+                        Hurry up! Check out our new collection.
+                    </p>
+                    <a href="browse/index.html" class="btn btn-dark">Shop Now</a>
+                </div>
+            </div>
+        
+            <div class="carousel-item">
+                <img src="assets/slider images/shoecollection.jpg" class="d-block w-100" alt="">
+                <div class="details">
+                    <span class="category">
+                        Accessories
+                    </span>
+                    <h1>
+                        WATCHES FROM TIMEX
+                    </h1>
+                    <h4>
+                        Buy 1 Get 1 free
+                    </h4>
+                    <p>
+                        Chronograph, round stainless steel watches form Timex.
+                    </p>
+                    <a href="browse/index.html" class="btn btn-dark">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="container" id="brands">
+        <div class="row align-items-center">
+            <div class="col">
+                <img src="assets/brands/adidas.png" class="w-100" alt="adidas">
+            </div>
+            <div class="col">
+                <img src="assets/brands/louis philippe.png" class="w-100" alt="louis-philippe">
+            </div>
+            <div class="col">
+                <img src="assets/brands/levis.png" class="w-100" alt="levis">
+            </div>
+            <div class="col">
+                <img src="assets/brands/Calvin Klein.png" class="w-100" alt="calvin-klein">
+            </div>
+            <div class="col">
+                <img src="assets/brands/nike.png" class="w-100" alt="nike">
+            </div>
+            <div class="col">
+                <img src="assets/brands/puma.png" class="w-100" alt="puma">
+            </div>
+            <div class="col">
+                <img src="assets/brands/H&M.png" class="w-100" alt="h&m">
+            </div>
+            <div class="col">
+                <img src="assets/brands/chanel.png" class="w-100" alt="chanel">
+            </div>
+            <div class="col">
+                <img src="assets/brands/pepe.png" class="w-100" alt="pepe-jeans">
+            </div>
+            <div class="col">
+                <img src="assets/brands/flying machine.png" class="w-100" alt="flying-machine">
+            </div>
+        </div>
+    </section>
+
+    <!-- Topdeals -->
+    <section id="topdeals">
+        <div class="container">
+            <h2 class="text-light text-center">TOP DEALS</h2>
+            <div class="slider">
+                <div class="card">
+                    <img src="assets/product images/shoes1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Addidas Sneakers
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            999 <del class="offer">Rs.
+                                1299
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/product images/shoes1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Addidas Sneakers
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            999 <del class="offer">Rs.
+                                1299
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/product images/shoes1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Addidas Sneakers
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            999 <del class="offer">Rs.
+                                1299
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/product images/shoes1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Addidas Sneakers
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            999 <del class="offer">Rs.
+                                1299
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/product images/shoes1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="">
+                            <h5>
+                                Addidas Sneakers
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            999 <del class="offer">Rs.
+                                1299
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured -->
+    <section id="featured" class="container">
+        <h2 class="text-center">FEATURED</h2>
+        <div class="row gx-0">
+            <div class="col-lg-4 col-md-6">
+                <div class="f-box">
+                    <img src="assets/product images/tshirt.jpg" class="w-100" alt="black-tshirt">
+                    <div class="featured-details">
+                        <span class="category">Mens</span>
+                        <h4>T-shirts Collection</h4>
+                        <h6>Starting at Rs.299</h6>
+                        <a href="browse/index.html">Shop Now <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="f-box">
+                    <img src="assets/product images/white shoes.png" class="w-100" alt="white-shoes">
+                    <div class="featured-details">
+                        <span class="category">Footwear</span>
+                        <h4>Shoes Collection</h4>
+                        <h6>Starting at Rs.999</h6>
+                        <a href="browse/index.html">Shop Now <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="f-box">
+                    <img src="assets/product images/whitetop.png" class="w-100" alt="white-top">
+                    <div class="featured-details">
+                        <span class="category">Womens</span>
+                        <h4>Western Collection</h4>
+                        <h6>Starting at Rs.299</h6>
+                        <a href="browse/index.html">Shop Now <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dealofday -->
+    <section id="dealofday">
+        <div class="container">
+            <div class="row"><div class="col-md-5">
+                    <img src="assets/product images/nike shoes red1.jpg" class="w-100" alt="white-sneakers">
+                </div>
+                <div class="col-md-7 text-center">
+                    <h3>Deal of The Day</h3>
+                    <h2>
+                        Nike Sneakers
+                    </h2>
+                    <h4>at Rs.
+                        1200 <del>Rs.
+                            2000
+                        </del>
+                    </h4>
+                    <h5>Grab it Now!</h5>
+                    <a href="browse/index.html" class="btn btn-dark">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- products -->
+    <section id="products" class="container">
+        <h2 class="text-center">POPULAR</h2>
+        <div class="row gx-0">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="card">
+                    <img src="assets/product images/nike shoes orange-white3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <span class="user-rating">4.5 <i class="bi bi-star-fill"></i></span>
+                        <a href="browse/index.html">
+                            <h5>
+                                Nike Running Shoes
+                            </h5>
+                        </a>
+                        <h6>Rs.
+                            1200 <del class="offer">Rs.
+                                2000
+                            </del>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="browse/index.html" class="btn btn-secondary">View More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Help</h6>
+                    <ul>
+                        <li><a href="contact/index.html">Contact</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Track Orders</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Categories</h6>
+                    <ul>
+                        <li><a href="browse/index.html">Womens</a></li>
+                        <li><a href="browse/index.html">Mens</a></li>
+                        <li><a href="browse/index.html">Shoes</a></li>
+                        <li><a href="browse/index.html">Accessories</a></li>
+                        <li><a href="browse/index.html">Bags</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Get in Touch</h6>
+                    <p>Any questions? Let us know at 12th floor, 222 Fake St, New Delhi, IN 10018 or call us on (+0) 44
+                        343 7769</p>
+                    <div class="d-flex social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Copyright &copy; 2021 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Slickjs -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slickslider.js"></script>
+
+    <script type="text/javascript">
+        // jquery for search box
+        $(document).ready(function () {
+            $(".search-btn").click(function () {
+                $("#search-box").slideToggle();
+                $('#searchproduct').trigger("focus");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

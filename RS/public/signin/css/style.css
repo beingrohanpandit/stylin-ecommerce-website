@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn{
+    background: crimson;
+    border-color: crimson;
+}
+.row{
+    transform: translateY(6rem);
+}
+.btn:hover{
+    background: rgb(240, 45, 84);
+    border-color: rgb(240, 45, 84);
+}
+.form-check-label{
+    font-size: 14px;
+    transform: translateY(1px);
+}
+.ls{
+    font-size: 15px;
+}
+.form-control:focus,.form-check-input:focus{
+    box-shadow: none;
+}
+a.btn{
+    position: absolute;
+    background: none;
+    border: none;
+    top: 1rem;
+    left: 1rem;
+}
+a.btn:hover{
+    background: none;
+    border: none;
+}
