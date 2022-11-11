@@ -46,7 +46,7 @@ $ click to open index.html
 
 # Project Screenshots
 
-![stylin](/screenshots/image1.png)
-![stylin](/screenshots/image2.png)
-![stylin](/screenshots/image3.png)
-![stylin](/screenshots/image4.png)
+![stylin](/screenshots/image1.PNG)
+![stylin](/screenshots/image2.PNG)
+![stylin](/screenshots/image3.PNG)
+![stylin](/screenshots/image4.PNG)
